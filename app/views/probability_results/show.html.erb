@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Received training:</strong>
+  <%= @probability_result.received_training %>
+</p>
+
+<p>
+  <strong>No training:</strong>
+  <%= @probability_result.no_training %>
+</p>
+
+<p>
+  <strong>Attended performance increase:</strong>
+  <%= @probability_result.attended_performance_increase %>
+</p>
+
+<p>
+  <strong>Attended no performance increase:</strong>
+  <%= @probability_result.attended_no_performance_increase %>
+</p>
+
+<p>
+  <strong>Unattended performance increase:</strong>
+  <%= @probability_result.unattended_performance_increase %>
+</p>
+
+<p>
+  <strong>Nattended no performance increase:</strong>
+  <%= @probability_result.nattended_no_performance_increase %>
+</p>
+
+<p>
+  <strong>Prob received training to attended performance increase:</strong>
+  <%= @probability_result.prob_received_training_to_attended_performance_increase %>
+</p>
+
+<p>
+  <strong>Prob received training to attended no performance increase:</strong>
+  <%= @probability_result.prob_received_training_to_attended_no_performance_increase %>
+</p>
+
+<p>
+  <strong>Prob no training to unattended performance increase:</strong>
+  <%= @probability_result.prob_no_training_to_unattended_performance_increase %>
+</p>
+
+<p>
+  <strong>Prob no training to unattended no performance increase:</strong>
+  <%= @probability_result.prob_no_training_to_unattended_no_performance_increase %>
+</p>
+
+<p>
+  <strong>Probability:</strong>
+  <%= @probability_result.probability %>
+</p>
+
+<%= link_to 'Edit', edit_probability_result_path(@probability_result) %> |
+<%= link_to 'Back', probability_results_path %>

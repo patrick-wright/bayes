@@ -1,0 +1,61 @@
+<%= form_for(@probability_result) do |f| %>
+  <% if @probability_result.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@probability_result.errors.count, "error") %> prohibited this probability_result from being saved:</h2>
+
+      <ul>
+      <% @probability_result.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :received_training %><br>
+    <%= f.text_field :received_training %>
+  </div>
+  <div class="field">
+    <%= f.label :no_training %><br>
+    <%= f.text_field :no_training %>
+  </div>
+  <div class="field">
+    <%= f.label :attended_performance_increase %><br>
+    <%= f.text_field :attended_performance_increase %>
+  </div>
+  <div class="field">
+    <%= f.label :attended_no_performance_increase %><br>
+    <%= f.text_field :attended_no_performance_increase %>
+  </div>
+  <div class="field">
+    <%= f.label :unattended_performance_increase %><br>
+    <%= f.text_field :unattended_performance_increase %>
+  </div>
+  <div class="field">
+    <%= f.label :nattended_no_performance_increase %><br>
+    <%= f.text_field :nattended_no_performance_increase %>
+  </div>
+  <div class="field">
+    <%= f.label :prob_received_training_to_attended_performance_increase %><br>
+    <%= f.text_field :prob_received_training_to_attended_performance_increase %>
+  </div>
+  <div class="field">
+    <%= f.label :prob_received_training_to_attended_no_performance_increase %><br>
+    <%= f.text_field :prob_received_training_to_attended_no_performance_increase %>
+  </div>
+  <div class="field">
+    <%= f.label :prob_no_training_to_unattended_performance_increase %><br>
+    <%= f.text_field :prob_no_training_to_unattended_performance_increase %>
+  </div>
+  <div class="field">
+    <%= f.label :prob_no_training_to_unattended_no_performance_increase %><br>
+    <%= f.text_field :prob_no_training_to_unattended_no_performance_increase %>
+  </div>
+  <div class="field">
+    <%= f.label :probability %><br>
+    <%= f.text_field :probability %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

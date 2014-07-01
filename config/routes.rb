@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :probability_results
+
   resources :probabilities
 
   resources :users

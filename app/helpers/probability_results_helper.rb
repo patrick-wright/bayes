@@ -1,0 +1,2 @@
+module ProbabilityResultsHelper
+end

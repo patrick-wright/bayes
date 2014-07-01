@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  received_training: 1.5
+  no_training: 1.5
+  attended_performance_increase: 1.5
+  attended_no_performance_increase: 1.5
+  unattended_performance_increase: 1.5
+  nattended_no_performance_increase: 1.5
+  prob_received_training_to_attended_performance_increase: 1.5
+  prob_received_training_to_attended_no_performance_increase: 1.5
+  prob_no_training_to_unattended_performance_increase: 1.5
+  prob_no_training_to_unattended_no_performance_increase: 1.5
+  probability: 1.5
+
+two:
+  received_training: 1.5
+  no_training: 1.5
+  attended_performance_increase: 1.5
+  attended_no_performance_increase: 1.5
+  unattended_performance_increase: 1.5
+  nattended_no_performance_increase: 1.5
+  prob_received_training_to_attended_performance_increase: 1.5
+  prob_received_training_to_attended_no_performance_increase: 1.5
+  prob_no_training_to_unattended_performance_increase: 1.5
+  prob_no_training_to_unattended_no_performance_increase: 1.5
+  probability: 1.5
