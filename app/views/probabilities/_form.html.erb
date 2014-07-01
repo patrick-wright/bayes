@@ -1,0 +1,33 @@
+<%= form_for(@probability) do |f| %>
+  <% if @probability.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@probability.errors.count, "error") %> prohibited this probability from being saved:</h2>
+
+      <ul>
+      <% @probability.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :total_pool %><br>
+    <%= f.number_field :total_pool %>
+  </div>
+  <div class="field">
+    <%= f.label :number_of_attendees %><br>
+    <%= f.number_field :number_of_attendees %>
+  </div>
+  <div class="field">
+    <%= f.label :attended_inc %><br>
+    <%= f.number_field :attended_inc %>
+  </div>
+  <div class="field">
+    <%= f.label :unattended_inc %><br>
+    <%= f.number_field :unattended_inc %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

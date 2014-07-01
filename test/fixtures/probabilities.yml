@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  total_pool: 1
+  number_of_attendees: 1
+  attended_inc: 1
+  unattended_inc: 1
+
+two:
+  total_pool: 1
+  number_of_attendees: 1
+  attended_inc: 1
+  unattended_inc: 1
